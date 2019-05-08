@@ -1,28 +1,37 @@
-// THIS SCRIPT MANAGES THE create.htlm
+// THIS SCRIPT MANAGES THE create.html view
 
 var db = firebase.firestore();
 
-function saveRecepie(event) {
-   event.preventDefault();
+function saveRecipie(event){
+    event.preventDefault();
+    
+    var currentRecipie = {};
+    Object.assign(currentRecipie, recipie);
 
-   var currentRecepie = {};
-   Object.assign(currentRecepie, recepie);
+    currentRecipie.name = $('#name').val();
+    currentRecipie.people = $('#people').val();
+    currentRecipie.preparationTime = $('#preparationTime').val();
+    currentRecipie.cookingTime = $('#cookingTime').val();
+    currentRecipie.difficulty = $('#difficulty').val();
+    currentRecipie.cost = $('#cost').val();
+    currentRecipie.description = $('#description').val();
 
-   currentRecepie.name = $('#name').val();
-   currentRecepie.people = $('#people').val();
-   currentRecepie.preparationTime = $('#preparationTime').val();
-   currentRecepie.cookingTime = $('#cookingTime').val();
-   currentRecepie.difficulty = $('#difficulty').val();
-   currentRecepie.cost = $('#cost').val();
-   currentRecepie.descrioption = $('#descrioption').val();
+    console.log(currentRecipie);
 
-   db.collection('recepie').doc().set(currentRecepie).
-   .then(function() {
-    console.log("Document successfully written!");
-   })
-   .catch(function(error) {
-    console.error("Error writing document: ", error);
-   });
+    db.collection('recipies')
+    .doc()
+    .set(currentRecipie)
+    .then(function() {
+        console.log("Document successfully written!");
+        alert('Yes ;)');
+    })
+    .catch(function(error) {
+        console.error("Error writing document: ", error);
+    });
 
-   return false;
+    return false;
 }
+
+$('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+});

@@ -1,5 +1,6 @@
-var ingradient = {
-    quantity: "",
-    measureUnit: "",
-    name: ""
-};
+var ingredient = {
+
+        quantity: "",
+        measureUnit: "",
+        name: ""
+    }

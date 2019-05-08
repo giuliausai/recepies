@@ -1,15 +1,12 @@
-/* This is the CSS for all the pages in the project. */
+/* CSS per tutte le pagine */
 
-.font-quicksan{
-font-family: 'Quicksand', sans-serif;
+.font-gochi{
+    font-family: 'Gochi Hand', cursive;
 }
 
 .logo-style{
-font-family: 'Quicksand', sans-serif;
-}
-
-p, h1, h2, h3, a, span{
-font-family: 'Quicksand', sans-serif;
+    font-family: 'Gochi Hand', cursive;
+     font-size: 25px;
 }
 
 body {

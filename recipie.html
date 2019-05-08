@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Recepies, l'app per scrivere e condividere le tue ricette.">
+  <meta name="author" content="Mat Shorts">
+
+  <title>Shop Item - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/shop-item.css" rel="stylesheet">
+
+
+  <!-- FontAwesome core CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <!-- Google Fonts core CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
+</head>
+
+<body>
+  
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" style="font-family: 'Gochi Hand', cursive;">ReciPies</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">
+              <i class="fas fa-home"></i>
+              Home
+              <span class="sr-only">(current)</span>
+              </a>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="create.html">
+              <i class="fas fa-utensil-spoon"></i>
+              Crea Ricetta
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="search.html">
+              <i class="fas fa-search"></i>
+              Cerca
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html">
+              <i class="fas fa-user"></i>
+              Il mio profilo
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-3">
+        <h1 class="my-4">ReciPies</h1>
+      </div>
+      <!-- /.col-lg-3 -->
+
+      <div class="col-lg-9"> 
+
+        <div class="card mt-4">
+          <img class="card-img-top img-fluid" src="http://placehold.it/900x400" alt=""> 
+          <div class="card-body">
+            <h2 class="card-title" id="titolo"></h2>
+            <h5 id = "difficulty"></h5>
+            <h5 id = "cost"></h5>
+            <h5 id = "preparationTime"></h5>
+            <h5 id = "cookingTime"></h5>
+            <h5 id = "people"></h5>
+            <p class="card-text" id="description"></p>
+          </div>
+        </div><br>
+        <!-- /.card -->
+
+      </div>
+      <!-- /.col-lg-9 -->
+
+    </div>
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript -->
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
+
+  <script src="js/firebase.js"></script>
+
+  <script src="js/controllers/recipie.js"></script>
+
+  
+  <script src="pwa-sw-register.js"></script>
+
+</body>
+
+</html>
