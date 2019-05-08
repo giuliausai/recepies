@@ -5,7 +5,8 @@ var firebaseConfig = {
   projectId: "recepies-e5f4e",
   storageBucket: "recepies-e5f4e.appspot.com",
   messagingSenderId: "839752886362",
-  appId: "1:839752886362:web:4be8d638d19abab7"};
+  appId: "1:839752886362:web:4be8d638d19abab7"}
+  ;
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-</script>
+
