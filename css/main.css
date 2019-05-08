@@ -1,0 +1,17 @@
+/* This is the CSS for all the pages in the project. */
+
+.font-quicksan{
+font-family: 'Quicksand', sans-serif;
+}
+
+.logo-style{
+font-family: 'Quicksand', sans-serif;
+}
+
+p, h1, h2, h3, a, span{
+font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    padding-top: 56px;
+  }
